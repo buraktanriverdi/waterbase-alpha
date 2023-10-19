@@ -20,7 +20,7 @@ server.get('/burak', function (req, res) {
 });
 
 server.get('/nodes', function (req, res) {
-    res.sendFile('./nodes.json', { root: __dirname });
+    res.sendFile('./admin/nodes.json', { root: __dirname });
 });
 server.get('/nodetypes', function (req, res) {
     res.sendFile('./nodeTypes.json', { root: __dirname });

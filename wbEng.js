@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 var wbfunctions = require("./wbFuncs.js").funcs();
-var nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './nodes.json')))).nodes;
+var nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './admin/nodes.json')))).nodes;
 var refreshRequired = 0;
 
 const { MongoClient } = require("mongodb");
@@ -79,7 +79,7 @@ exports.newNode = function (index) {
     var nd = new Node(index);
     if(refreshRequired>0){
         wbfunctions = require("./wbFuncs.js").funcs();
-        nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './nodes.json')))).nodes;
+        nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './acmin/nodes.json')))).nodes;
         refreshRequired --;
     }
     return nd;
@@ -87,7 +87,7 @@ exports.newNode = function (index) {
 
 exports.newNodeByHttp = function (str, type) {
     wbfunctions = require("./wbFuncs.js").funcs();
-    nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './nodes.json')))).nodes;
+    nodes = (JSON.parse(fs.readFileSync(path.join(__dirname, './admin/nodes.json')))).nodes;
 
     var nodeName = "";
     switch(type){

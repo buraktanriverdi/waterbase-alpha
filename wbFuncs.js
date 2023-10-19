@@ -29,7 +29,7 @@ var funcs = [
         func: async function () {
             var inp1 = await this.input(1);
             var inp2 = await this.input(2);
-            this.triggerNode((inp1 == inp1) ? 0 : 1);
+            this.triggerNode((inp1 == inp2) ? 0 : 1);
         }
     },
     {
