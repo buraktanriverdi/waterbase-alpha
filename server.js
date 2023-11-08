@@ -121,4 +121,6 @@ server.get('/wb-http/:str', function (req, res) {
 server.use('/admin', express.static(admin));
 server.use(express.static(public));
 
-server.listen(8084);
+server.listen(3030, function () {
+    console.log('Waterbase listening on port 3030!');
+});
