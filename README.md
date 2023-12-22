@@ -21,12 +21,4 @@ To run the project, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. For more information, check the [LICENSE](link-to-license-file) file.
-
-## Contributing
-
-If you'd like to contribute, please take a look at our [CONTRIBUTING](link-to-contributing-guide) guide. We welcome your contributions!
-
----
-
-If you have any questions or feedback regarding the project, please [contact us](mailto:example@example.com). Thank you!
+This project is licensed under the MIT License.
